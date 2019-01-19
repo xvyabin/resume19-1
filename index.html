@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人简历</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+  <link rel="stylesheet" href="./a.css">
+  <link rel="stylesheet" href="./loading.css">
+  
+  <script src="//at.alicdn.com/t/font_901955_04pph9kwd35t.js"></script> 
+  <style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+    .sise-welcome{
+      display: none;
+      position: fixed;
+      top:0;left:0;width:100%;height:100%;
+      background:#fff;
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    .sise-welcome.active{
+      display: flex;
+    }
+</style>
+</head>
+<body>
+  <div id='siseWelcome'  class="sise-welcome active ">
+  <div class="loading"></div>
+  </div>
+  <div id='topNavBar' class="topNavBar sticky clearfix">
+    <div class="topNavBar-inner clearfix">
+      <a class="logo" href="#" alt="logo" style="float: left;">
+        <span class="rs">RS</span>
+        <span class="card">card</span>
+      </a>
+      <nav class="menu" style="float:right" ;>
+        <ul class="clearfix">
+          <li><a href="#siteAbout">关于</a>
+          </li>
+          <li><a href="#siseSkills">技能</a></li>
+          <li>
+            <a  href="#siteWorks">作品</a>
+            <ul class="submenu">
+              <li>作品1</li>
+              <li>作品2</li>
+              <li>作品3</li>
+            </ul>
+          </li>
+          <li><a  href="#">博客</a>
+           <ul class="submenu">
+              <li>博客1</li>
+              <li>博客2</li>
+              <li>博客3</li>
+            </ul>
+          </li>
+          <li><a href="#">日历</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="banner">
+     <div class="mask"></div>
+  </div>
+  <main>
+
+    <div data-x id='siteAbout' class="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="./img/avatar.png" alt="头像" width="299" height="347">
+        </div>
+        <div class="text">
+          <span class="welcome">Hello
+            <span class="triangle"></span>
+          </span>
+          <h1>徐雅彬</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>28</dd>
+            <dt>所在城市</dt>
+            <dd>深圳</dd>
+            <dt>邮箱</dt>
+            <dd>792134478@qq.com</dd>
+            <dt>手机</dt>
+            <dd>13005754466</dd>
+          </dl>
+        </div> 
+      </div>
+      <footer class="media">
+        <a href="https://github.xvyabin.com/" target="_blank">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-blog1"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weixin"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-qq"></use>
+          </svg>
+        </a>
+      </footer>
+    </div>
+    
+    <p class="downloadResume-wrapper">
+      <a href="./download/resume.pdf" class="downloadResume" target="_blank" download>下 载 PDF 简 历</a>
+    </p>
+  
+    <p class="selfIntroduction ">
+      徐雅彬，初级前端工程师。 <br>
+      技能：前端开发。
+    </p>
+  
+  </main>
+  <section data-x id='siseSkills' class="skills">
+    <h2>技 能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>HTML 5 &amp; CSS 3</h3>
+        <div class="prograssBar">
+          <div class="prograss" style="width: 85%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>JavaScript</h3>
+        <div class="prograssBar">
+          <div class="prograss" style="width: 75%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>jQuery</h3>
+        <div class="prograssBar">
+          <div class="prograss" style="width: 78%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Vue.js</h3> 
+        <div class="prograssBar">
+          <div class="prograss" style="width: 60%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>React.js </h3>
+        <div class="prograssBar" >
+          <div class="prograss" style="width: 40%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Node.js </h3>
+          <div class="prograssBar">
+            <div class="prograss" style="width: 42%"></div>
+          </div>
+        </li>
+    </ol>
+  </section>
+  <section data-x id='siteWorks' class="portfolio">
+    <h2>作 品 集</h2>
+    <nav>
+      <ol class="clearfix">
+        <li id="portfolio1">所 有</li>
+        <li id="portfolio2">框 架</li>
+        <li id="portfolio3">原 生 JS & CSS</li>
+      </ol>
+      <div id="portfolioBar" class="bar state-1">
+          <div class="bar-inner"></div>
+        </div>
+        <script>
+            portfolio1.onclick= function(){
+              portfolioBar.className = 'bar state-1'
+            }
+            portfolio2.onclick= function(){
+              portfolioBar.className = 'bar state-2'
+            }
+            portfolio3.onclick= function(){
+              portfolioBar.className = 'bar state-3'
+            }
+          </script>
+    </nav>
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <img src="./img/16-1.png" class="swiper-slide">
+        <img src="./img/16-2.png" class="swiper-slide">
+        <img src="./img/16-3.png" class="swiper-slide">
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+   <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
+  <section class="message">
+    <h2>留言板</h2>
+    <ol id='messageList'>
+    </ol>
+    <form id='postMessageForm' style="width: 700px;margin:50px auto; ">
+      <label>姓名</label>
+      <input type="text" name="name">
+      <label>内容</label>
+      <input type="text" name="content">
+      <input type="submit" value="提交">
+    </form>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+  <!-- 存储服务 -->
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
+
+  <script src="./js/swiper.js"></script>
+  <script src="./js/loading.js"></script>
+  <script src="./js/auto-slide.js"></script>
+  <script src="./js/smoothly-navigation.js"></script>
+  <script src="./js/stycky-topbar.js"></script>
+  <script src="./js/message.js"></script>
+</body>
+</html>
